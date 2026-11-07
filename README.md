@@ -1,77 +1,59 @@
 # Héctor Luis Pagán Ferrán
 
-**Automation and digital operations engineer.** Málaga, Spain.
+**AI Engineer · Generative AI** — LLMs, RAG and agents. Málaga, Spain.
 
-Seven years building systems that remove manual work from small and mid-sized
-businesses — integrating CRMs, payments, messaging and databases into flows that
-run without anyone watching them. Roughly 30 companies to date.
-
-Most of what I build lives at the boundary between a business process and the
-APIs that can replace it. The projects below are the ones where I owned the
-whole thing: schema, backend, frontend, deployment and the operational
-aftermath.
+- **Verifiable:** [16 Credly badges](https://www.credly.com/users/hector-pagan.312312ac) covering Hugging Face, IBM watsonx.ai, LangChain and PyTorch.
+- **In production:** 4+ years delivering software to more than 10 companies, with OpenAI integrated into client systems.
+- **Own project:** CV Tailor, a Claude pipeline that rewrites using only facts from the profile and verifies the result.
 
 ---
 
 ## Selected work
 
-### [VendoYa](https://github.com/Borinken/VendoYa) · Next.js · Supabase · Stripe
+### [CV Tailor](https://github.com/Borinken/cv-tailor) · Python · Claude · Chrome headless
+
+Rewrites a CV for one specific job posting using only facts the profile already
+contains, then checks the output against the posting's own wording and reports
+what is still missing. The model is constrained to reorder and rephrase; the
+verification step reads the exported PDF the way an applicant tracking system
+would. Runs locally, no account and no upload.
+
+### [VendoYa](https://github.com/Borinken/VendoYa) · Next.js · Supabase · Stripe — [live](https://vendoya.es)
 
 Lead acquisition and CRM for small real estate agencies. Unifies enquiries
 arriving from a web funnel, WhatsApp and Gmail into one pipeline with automated
-follow-up.
+follow-up. Built for a working agency and deployed. Third-party credentials are
+encrypted at rest and scoped per tenant with row-level security.
 
-Built for a working agency and deployed. Scheduling runs on GitHub Actions
-rather than Vercel Cron, because the Hobby plan's one-invocation-per-day limit
-is useless for a follow-up queue. Third-party credentials — the agency's own
-Gmail and Twilio tokens — are encrypted at rest and scoped per tenant with RLS.
-
-### [Artist Launch OS](https://github.com/Borinken/artist-launch-app) · Next.js · Supabase · Stripe
+### [Artist Launch OS](https://github.com/Borinken/artist-launch-app) · Next.js · Supabase · Stripe — [demo](https://artist-launch-app.vercel.app)
 
 Back-office for independent musicians: rights registration, split sheets,
-contracts, distribution delivery and royalty tracking.
-
-Audio masters are validated against distribution spec in the browser by parsing
-the RIFF/WAVE header from the first 64 bytes, so a file that would be rejected
-downstream is never uploaded. Authorisation is enforced twice — in the route
-handlers and again through 13 RLS policies — because either layer alone fails
-open under a single mistake.
-
-### [Eterix Screener](https://github.com/Borinken/eterix-screener) · Next.js · Python · Supabase
-
-Scores how mechanically copyable a Solana wallet's trading history is —
-separating same-transaction atomic arbitrage from sequential activity that a
-follower could actually reproduce.
-
-The upstream data source rate-limits aggressively and bans on excess, so the
-web tier never calls it. Requests are enqueued in Postgres and drained by a
-single worker process; traffic spikes become queue depth instead of a ban.
+contracts and royalty tracking. Audio masters are validated against the
+distribution spec in the browser before upload; authorisation is enforced in the
+route handlers and again through 13 row-level security policies.
 
 ---
 
 ## Stack
 
-**Languages** TypeScript · Python · SQL
-**Frontend** Next.js (App Router) · React · Tailwind
-**Backend** Node · FastAPI · PostgreSQL · Supabase
-**Integrations** Stripe · Gmail API · Twilio / WhatsApp Business · OAuth 2.0
-**Automation** Make · n8n · GitHub Actions
-**Infrastructure** Vercel · Railway · Docker · Azure
+**Languages** Python · TypeScript · SQL
+**AI** LLM APIs (OpenAI, Anthropic) · prompt design with verification · RAG · LangChain · Hugging Face · PyTorch · IBM watsonx.ai (the last four from the IBM Generative AI Engineering programme)
+**Web and backend** Next.js · React · FastAPI · Node · PostgreSQL · Supabase
+**Integrations** Stripe · Gmail API · Twilio / WhatsApp Business · OAuth 2.0 · n8n
+**Delivery** Docker · GitHub Actions · Vercel · Render
 
 ---
 
 ## Background
 
-Digital operations consultant since 2022, working with SMBs on process
-automation and cloud migration. Before that, three years running operations for
-a family restaurant — inventory, suppliers, payroll and cost control — which is
-where the interest in automating tedious work started.
-
-B.S. Information Technology, Universidad Interamericana de Puerto Rico.
-Spanish (native) · English (C1).
+Software and process automation for small and mid-sized businesses since 2022,
+through my own consultancy HQSC Inc. Before that, operations management at a
+restaurant in Managua (2020–2024). Studies in Business Administration with a
+specialisation in Information Technology, Universidad Interamericana de Puerto
+Rico. Spanish (native) · English (C1).
 
 ---
 
-📫 hqscinc@gmail.com
+📫 hqscinc@gmail.com · [LinkedIn](https://www.linkedin.com/in/hector-pagan-98789a41) · [Credly](https://www.credly.com/users/hector-pagan.312312ac)
 
 <!-- profile README -->
