@@ -4,11 +4,19 @@
 
 - **Verifiable:** [16 Credly badges](https://www.credly.com/users/hector-pagan.312312ac) covering Hugging Face, IBM watsonx.ai, LangChain and PyTorch.
 - **In production:** 4+ years delivering software to more than 10 companies, with OpenAI integrated into client systems.
-- **Own project:** CV Tailor, a Claude pipeline that rewrites using only facts from the profile and verifies the result.
+- **Own project:** Eterix Business, a Claude agent with RAG that computes the figures in code and measures the cost of each proposal.
 
 ---
 
 ## Selected work
+
+### [Eterix Business](https://github.com/Borinken/eterix-business) · TypeScript · Next.js 16 · Supabase · Claude
+
+A grounded AI agent that audits a local business online and writes its proposal.
+The figures are computed in code, never by the model; advice is retrieved with
+BM25 from a curated knowledge base; every proposal records its token usage and
+cost, with prompt caching on the system prompt. Rate limits, a no-key fallback
+and 137 tests.
 
 ### [CV Tailor](https://github.com/Borinken/cv-tailor) · Python · Claude · Chrome headless
 
