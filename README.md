@@ -47,7 +47,7 @@ route handlers and again through 13 row-level security policies.
 ## Background
 
 Software and process automation for small and mid-sized businesses since 2022,
-through my own consultancy HQSC Inc. Before that, operations management at a
+at the technology consultancy HQSC Inc. Before that, operations management at a
 restaurant in Managua (2020–2024). Studies in Business Administration with a
 specialisation in Information Technology, Universidad Interamericana de Puerto
 Rico. Spanish (native) · English (C1).
