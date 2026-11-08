@@ -10,7 +10,7 @@
 
 ## Selected work
 
-### [Eterix Business](https://github.com/Borinken/eterix-business) · TypeScript · Next.js 16 · Supabase · Claude
+### [Eterix Business](https://github.com/Borinken/eterix-business) · TypeScript · Next.js 16 · Supabase · Claude — [live demo](https://eterix-business.vercel.app)
 
 A grounded AI agent that audits a local business online and writes its proposal.
 The figures are computed in code, never by the model; advice is retrieved with
