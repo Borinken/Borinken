@@ -14,9 +14,9 @@
 
 A grounded AI agent that audits a local business online and writes its proposal.
 The figures are computed in code, never by the model; advice is retrieved with
-BM25 from a curated knowledge base; every proposal records its token usage and
-cost, with prompt caching on the system prompt. Rate limits, a no-key fallback
-and 141 tests.
+BM25 from a curated knowledge base, and that retrieval is measured on 93 labelled
+scenarios; every proposal records its token usage and cost, with prompt caching on
+the system prompt. Rate limits, a no-key fallback and 172 tests.
 
 ### [CV Tailor](https://github.com/Borinken/cv-tailor) · Python · Claude · Chrome headless
 
